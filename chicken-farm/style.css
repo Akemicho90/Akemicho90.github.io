@@ -1,0 +1,323 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* background: url('image/background-image.jpg') center/cover no-repeat; */
+    color: #333; /* Text color for readability */
+    min-height: 100vh; /* Set a minimum height to ensure the page fills the viewport height */
+    width: 100vw;
+} 
+.container {
+    color: #333; /* Text color for readability */
+    display: flex; /* Enable flex layout for vertical centering */
+    flex-direction: column;
+    width: 100%;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background for header */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#prices {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for the prices section */
+}
+
+#prices table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#prices th, #prices td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+#prices th {
+    background-color: #333;
+    color: #fff;
+}
+
+#prices td {
+    background-color: #fff;
+}
+
+#prices tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+#prices {
+    display: inline-block; /* Display Prices section inline */
+    width: auto; /* Set the width for a horizontal layout */
+}
+
+#contact {
+    display: inline-block; /* Display Contact Us section inline */
+    width: auto; /* Set the width for a horizontal layout */
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for content sections */
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Align section content vertically */
+    align-items: center; /* Center content horizontally */
+    
+}
+
+
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image {
+    flex: 1; /* Allow the image to take up half of the available space */
+    margin: 20px; /* Add spacing between the image and text */
+}
+
+.about-image img {
+    max-width: 100%;
+}
+
+.about-text {
+    flex: 1; /* Allow the text to take up half of the available space */
+}
+
+.product-slider {
+    display: flex;
+    overflow: hidden; /* Hide overflowing content */
+    width: 100%;
+}
+
+.product-slide {
+    flex: 0 0 100%; /* Each slide takes the full width */
+    padding: 10px; /* Reduce padding for a smaller slide */
+    text-align: center;
+    transition: transform 0.5s; /* Enable smooth slide transition */
+}
+
+.product-slide img {
+    max-width: 40%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.slider-buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.prev-button,
+.next-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 0px;
+    transition: background-color 0.3s;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: #555; /* Change the background color on hover */
+}
+#contact-form {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#contact-form label {
+    float: left;
+    display: block;
+    margin-top: 10px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#contact-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background for footer */
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-link {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+
+.icon-link:hover {
+    color: #bbb;
+}
+
+@media only screen and ( max-width:768px) {
+    .container{
+        width: 600px;
+        margin: 0 auto;
+    }
+    header h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    p{
+        font-size: 12px;
+    }
+    nav li {
+        margin: 0 10px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+    .prev-button,
+    .next-button {
+        padding: 10px 20px;
+        margin: 0 10px;
+        font-size: 12px;
+    }
+    #prices th, #prices td {
+        padding: 5px;
+        font-size: 10px;
+    }
+    #contact-form {
+        max-width: 400px;
+        text-align: justify;
+    }
+    #contact-form label {
+        font-size: 12px;
+    }
+    #contact-form input,
+    #contact-form textarea {
+        padding: 5px;
+        margin-top: 5px;
+    }
+    #contact-form button {
+        font-size: 12px;
+        padding: 10px 20px;
+        margin-top: 10px;
+        
+    }
+    .icon-link {
+        font-size: 20px;
+    }
+    
+}
+
+@media only screen and ( max-width:450px) {
+
+    header h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    h3{
+        font-size: 10px;
+    }
+    p{
+        font-size: 10px;
+    }
+    nav li {
+        margin: 0 5px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+    .about-content {
+        flex-direction: column;
+    }
+    .prev-button,
+    .next-button {
+        padding: 5px 10px;
+        margin: 0 5px;
+        font-size: 10px;
+    }
+    #prices th, #prices td {
+        padding: 5px;
+        font-size: 10px;
+    }
+    #contact-form {
+        max-width: 300px;
+        text-align: justify;
+    }
+    #contact-form label {
+        font-size: 10px;
+    }
+    #contact-form input,
+    #contact-form textarea {
+        padding: 5px;
+        margin-top: 5px;
+    }
+    #contact-form button {
+        font-size: 10px;
+        padding: 5px 10px;
+        margin-top: 5px;
+        
+    }
+    .icon-link {
+        font-size: 12px;
+    }
+    
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Chicken Farm Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Chicken Farm</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#prices">Prices</a></li> 
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="about">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="image/background-image.jpg" alt="About Us Image">
+                </div>
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>Welcome to our chicken farm! We are committed to providing high-quality, farm-fresh poultry products.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-slider">
+                <div class="product-slide">
+                    <img src="image/free-range-chicken.jpg" alt="Free-Range Chickens">
+                    <h3>Free-Range Chickens</h3>
+                    <p>We raise healthy and happy free-range chickens for the best meat and eggs.</p>
+                </div>
+                <div class="product-slide">
+                    <img src="image/organic-eggs.jpg" alt="Organic Eggs">
+                    <h3>Organic Eggs</h3>
+                    <p>Our hens lay delicious organic eggs that are nutritious and tasty.</p>
+                </div>
+                <!-- Add more product slides as needed -->
+            </div>
+            <div class="slider-buttons">
+                <button class="prev-button" onclick="prevSlide()"><</button>
+                <button class="next-button" onclick="nextSlide()">></button>
+            </div>
+        </section>
+        
+        <section id="prices">
+            <h2>Prices</h2>
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Free-Range Chickens</td>
+                    <td>$10 per chicken</td>
+                </tr>
+                <tr>
+                    <td>Organic Eggs</td>
+                    <td>$5 per dozen</td>
+                </tr>
+                <!-- Add more products and prices as needed -->
+            </table>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or inquiries, please feel free to contact us:</p>
+            <form id="contact-form" onsubmit="sendEmail(); reset(); return false;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </section>
+        
+        <footer>
+            <div class="social-icons">
+                <a href="#" target="_blank" class="icon-link" title="facebook"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="#" target="_blank" class="icon-link" title="twitter"><i class='bx bxl-twitter'></i></a>
+                <a href="#" target="_blank" class="icon-link" title="instagram"><i class='bx bxl-instagram'></i></a>
+                <!-- Add more social media icons as needed -->
+            </div>
+            <p>&copy; 2023 Chicken Farm. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
