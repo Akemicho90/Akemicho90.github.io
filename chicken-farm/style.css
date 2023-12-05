@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    /* background: url('image/background-image.jpg') center/cover no-repeat; */
+    background: url('image/background-image.jpg') /* center/cover no-repeat */; 
     color: #333; /* Text color for readability */
     min-height: 100vh; /* Set a minimum height to ensure the page fills the viewport height */
     width: 100vw;
